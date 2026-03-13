@@ -53,7 +53,9 @@ public class InventarioTienda {
     public void listarProductos() {
         System.out.println("Listado de productos:");
         for (int i = 0; i < contador; i++) {
-            System.out.println("Posición " + i + ": " + productos[i]);
+            if (productos[i] != null) {
+                System.out.println("Posición " + i + ": " + productos[i]);
+            }
         }
     }
 
